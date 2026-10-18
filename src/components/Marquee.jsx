@@ -17,7 +17,7 @@ export default function Marquee({ genres = [] }) {
     </span>)}
   </div>
 
-  return <div className="marquee" data-cursor>
+  return <div className="marquee">
     {strip(false)}
     {strip(true)}
   </div>

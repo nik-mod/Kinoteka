@@ -5,10 +5,10 @@ export default function Footer() {
   return <footer className="site-footer">
     <div className="footer-inner">
       <div className="footer-col">
-        <div className="footer-brand">
-          <span className="brand-mark">K</span>
+        <Link to="/" className="footer-brand" aria-label="კინოთეკა — მთავარი გვერდი">
+          <span className="brand-mark"><Icon name="film" size={21} /></span>
           <span className="brand-name">კინოთეკა</span>
-        </div>
+        </Link>
         <p className="footer-tagline">პირადი კინოარქივი — კატალოგი, ფავორიტები და აღწერები ერთ მშვიდ სივრცეში.</p>
       </div>
       <nav className="footer-col" aria-label="ფუტერის ნავიგაცია">

@@ -9,6 +9,7 @@ const artwork = {
   'the dark knight': { poster: '/posters/the-dark-knight.jpg' },
   'dark knight': { poster: '/posters/the-dark-knight.jpg' },
   parasite: { poster: '/posters/parasite.jpg' },
+  'ქუჩის ძაღლები': { poster: '/posters/strays.webp' },
   titanic: { poster: '/posters/titanic.jpg' },
   'the matrix': { poster: '/posters/the-matrix.jpg' },
   matrix: { poster: '/posters/the-matrix.jpg' },
@@ -33,10 +34,10 @@ function apiImage(movie, keys) {
 
 export function getMovieArtwork(movie) {
   const key = normalizeMovieTitle(movie?.title)
-  const local = artwork[key] || Object.entries(artwork).find(([candidate]) => key.includes(candidate))?.[1] || {}
+  const local = artwork[key] || {}
 
   return {
-    poster: local.poster || apiImage(movie, ['poster_url', 'posterUrl', 'poster', 'image_url', 'imageUrl', 'image']) || '',
+    poster: apiImage(movie, ['poster_url', 'posterUrl', 'poster', 'image_url', 'imageUrl', 'image']) || local.poster || '',
     backdrop: local.backdrop || apiImage(movie, ['backdrop_url', 'backdropUrl', 'backdrop', 'cover_url', 'coverUrl']) || '',
   }
 }

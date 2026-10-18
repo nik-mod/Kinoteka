@@ -8,6 +8,7 @@ const paths = {
   close: <path d="m5 5 14 14M19 5 5 19" />,
   search: <><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></>,
   play: <><path d="M8 5.5v13l11-6.5z" /><circle cx="12" cy="12" r="9.4" /></>,
+  pause: <><path d="M9 8v8M15 8v8" /><circle cx="12" cy="12" r="9.4" /></>,
   star: <path d="M12 3.4l2.5 5.4 5.9.6-4.4 4 1.2 5.8L12 16.3l-5.2 2.9 1.2-5.8-4.4-4 5.9-.6z" />,
   clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.4 2" /></>,
   film: <><path d="M4 6.5h16v11H4z" /><path d="M8 6.5v11M16 6.5v11M4 10h4m8 0h4M4 14h4m8 0h4" /></>,
